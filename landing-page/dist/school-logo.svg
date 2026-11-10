@@ -1,0 +1,222 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Royal Navy Gradients -->
+    <linearGradient id="shieldNavy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="50%" stop-color="#312e81" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+
+    <!-- Imperial Gold Gradient -->
+    <linearGradient id="imperialGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="35%" stop-color="#fbbf24" />
+      <stop offset="70%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#92400e" />
+    </linearGradient>
+
+    <!-- Flame Torch Gradient -->
+    <linearGradient id="flameGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#dc2626" />
+      <stop offset="40%" stop-color="#f97316" />
+      <stop offset="75%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#fef9c3" />
+    </linearGradient>
+
+    <!-- Inner Book Pages Gradient -->
+    <linearGradient id="bookWhite" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="50%" stop-color="#e2e8f0" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+
+    <!-- Drop Shadows -->
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#f59e0b" flood-opacity="0.35" />
+    </filter>
+    <filter id="cardShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#0f172a" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Outer Rounded Shield / Crest Base -->
+  <path d="M 256 18 
+           C 382 18, 452 44, 452 148 
+           C 452 292, 382 432, 256 492 
+           C 130 432, 60 292, 60 148 
+           C 60 44, 130 18, 256 18 Z" 
+        fill="url(#shieldNavy)" 
+        filter="url(#cardShadow)" />
+
+  <!-- Outer Gold Border Shield -->
+  <path d="M 256 26 
+           C 374 26, 442 50, 442 152 
+           C 442 286, 376 420, 256 478 
+           C 136 420, 70 286, 70 152 
+           C 70 50, 138 26, 256 26 Z" 
+        fill="none" 
+        stroke="url(#imperialGold)" 
+        stroke-width="10" 
+        stroke-linecap="round" />
+
+  <!-- Inner Gold Delicate Border -->
+  <path d="M 256 40 
+           C 362 40, 424 62, 424 156 
+           C 424 278, 364 402, 256 456 
+           C 148 402, 88 278, 88 156 
+           C 88 62, 150 40, 256 40 Z" 
+        fill="none" 
+        stroke="url(#imperialGold)" 
+        stroke-width="2.5" 
+        stroke-dasharray="6,4" 
+        opacity="0.8" />
+
+  <!-- Top Halo Sunburst Rays (Enlightenment / Gyan) -->
+  <g stroke="url(#imperialGold)" stroke-width="4" stroke-linecap="round" opacity="0.85">
+    <line x1="256" y1="92" x2="256" y2="60" />
+    <line x1="222" y1="102" x2="198" y2="76" />
+    <line x1="290" y1="102" x2="314" y2="76" />
+    <line x1="196" y1="126" x2="164" y2="108" />
+    <line x1="316" y1="126" x2="348" y2="108" />
+    <line x1="180" y1="158" x2="146" y2="150" />
+    <line x1="332" y1="158" x2="366" y2="150" />
+  </g>
+
+  <!-- Golden Sun Core -->
+  <circle cx="256" cy="154" r="38" fill="url(#imperialGold)" filter="url(#goldGlow)" />
+  <circle cx="256" cy="154" r="30" fill="#fef08a" opacity="0.9" />
+
+  <!-- Torch of Wisdom (Jyoti / Flame) -->
+  <path d="M 256 94 
+           C 272 120, 280 134, 274 154 
+           C 268 170, 244 170, 238 154 
+           C 232 134, 240 120, 256 94 Z" 
+        fill="url(#flameGrad)" 
+        filter="url(#goldGlow)" />
+  <path d="M 256 112 
+           C 264 128, 268 138, 264 150 
+           C 260 160, 248 160, 244 150 
+           C 240 138, 244 128, 256 112 Z" 
+        fill="#fef9c3" />
+
+  <!-- Torch Golden Handle / Base -->
+  <path d="M 248 164 L 264 164 L 260 190 L 252 190 Z" fill="url(#imperialGold)" stroke="#78350f" stroke-width="1.5" />
+  <path d="M 242 162 L 270 162 L 266 168 L 246 168 Z" fill="url(#imperialGold)" />
+
+  <!-- Academic Graduation Cap / Mortarboard Symbol -->
+  <g transform="translate(0, -6)">
+    <polygon points="256,192 312,208 256,224 200,208" fill="url(#imperialGold)" stroke="#78350f" stroke-width="2" />
+    <polygon points="256,196 304,208 256,220 208,208" fill="#1e1b4b" />
+    <path d="M 220 215 L 220 232 C 220 242, 292 242, 292 232 L 292 215" fill="#1e1b4b" stroke="url(#imperialGold)" stroke-width="2" />
+    <!-- Cap Tassel -->
+    <path d="M 304 210 Q 314 220, 312 236" fill="none" stroke="url(#imperialGold)" stroke-width="3" stroke-linecap="round" />
+    <circle cx="312" cy="238" r="3.5" fill="url(#imperialGold)" />
+  </g>
+
+  <!-- Open Sacred Book of Knowledge (Vidya / Gyan) -->
+  <g filter="url(#goldGlow)">
+    <!-- Book Spine & Binding Backing -->
+    <path d="M 256 268 
+             C 286 250, 340 252, 378 266 
+             L 378 344 
+             C 340 330, 286 328, 256 346 
+             C 226 328, 172 330, 134 344 
+             L 134 266 
+             C 172 252, 226 250, 256 268 Z" 
+          fill="#0f172a" 
+          stroke="url(#imperialGold)" 
+          stroke-width="6" 
+          stroke-linejoin="round" />
+
+    <!-- Left Book Pages -->
+    <path d="M 254 274 
+             C 226 258, 178 259, 142 272 
+             L 142 336 
+             C 178 323, 226 322, 254 338 Z" 
+          fill="url(#bookWhite)" 
+          stroke="#94a3b8" 
+          stroke-width="1.5" />
+
+    <!-- Right Book Pages -->
+    <path d="M 258 274 
+             C 286 258, 334 259, 370 272 
+             L 370 336 
+             C 334 323, 286 322, 258 338 Z" 
+          fill="url(#bookWhite)" 
+          stroke="#94a3b8" 
+          stroke-width="1.5" />
+
+    <!-- Page Text Lines Simulation (Knowledge scripts) -->
+    <g stroke="#64748b" stroke-width="2.5" stroke-linecap="round" opacity="0.6">
+      <line x1="162" y1="288" x2="234" y2="284" />
+      <line x1="162" y1="300" x2="234" y2="296" />
+      <line x1="162" y1="312" x2="216" y2="308" />
+
+      <line x1="278" y1="284" x2="350" y2="288" />
+      <line x1="278" y1="296" x2="350" y2="300" />
+      <line x1="296" y1="308" x2="350" y2="312" />
+    </g>
+
+    <!-- Center Spine Ribbon Bookmark -->
+    <path d="M 254 264 L 258 264 L 258 356 L 256 350 L 254 356 Z" fill="url(#flameGrad)" />
+  </g>
+
+  <!-- Laurel Wreath Leaves (Left Side) -->
+  <g fill="url(#imperialGold)" stroke="#78350f" stroke-width="0.8">
+    <path d="M 124 230 C 104 220, 94 238, 114 246 C 122 250, 128 238, 124 230 Z" />
+    <path d="M 112 260 C 92 254, 86 272, 106 278 C 114 280, 118 268, 112 260 Z" />
+    <path d="M 110 294 C 92 292, 88 310, 108 314 C 116 314, 118 302, 110 294 Z" />
+    <path d="M 118 330 C 102 332, 102 350, 120 350 C 128 348, 128 336, 118 330 Z" />
+    <path d="M 136 364 C 122 370, 128 388, 144 382 C 152 378, 148 368, 136 364 Z" />
+    <path d="M 164 396 C 152 406, 162 422, 176 414 C 182 408, 176 398, 164 396 Z" />
+  </g>
+
+  <!-- Laurel Wreath Leaves (Right Side) -->
+  <g fill="url(#imperialGold)" stroke="#78350f" stroke-width="0.8">
+    <path d="M 388 230 C 408 220, 418 238, 398 246 C 390 250, 384 238, 388 230 Z" />
+    <path d="M 400 260 C 420 254, 426 272, 406 278 C 398 280, 394 268, 400 260 Z" />
+    <path d="M 402 294 C 420 292, 424 310, 404 314 C 396 314, 394 302, 402 294 Z" />
+    <path d="M 394 330 C 410 332, 410 350, 392 350 C 384 348, 384 336, 394 330 Z" />
+    <path d="M 376 364 C 390 370, 384 388, 368 382 C 360 378, 364 368, 376 364 Z" />
+    <path d="M 348 396 C 360 406, 350 422, 336 414 C 330 408, 336 398, 348 396 Z" />
+  </g>
+
+  <!-- Prestigious Golden Foundation Ribbon Banner (DIRD • ESTD 1998) -->
+  <g filter="url(#goldGlow)">
+    <!-- Ribbon Fold Ends -->
+    <polygon points="120,412 150,388 150,428" fill="#78350f" />
+    <polygon points="392,412 362,388 362,428" fill="#78350f" />
+
+    <!-- Main Ribbon Arc Body -->
+    <path d="M 134 402 
+             C 190 388, 322 388, 378 402 
+             L 370 438 
+             C 318 424, 194 424, 142 438 Z" 
+          fill="url(#imperialGold)" 
+          stroke="#78350f" 
+          stroke-width="2.5" />
+
+    <!-- Ribbon Text: POWERED BY DIRD -->
+    <text x="256" y="420" 
+          text-anchor="middle" 
+          font-family="system-ui, -apple-system, sans-serif" 
+          font-weight="900" 
+          font-size="16" 
+          letter-spacing="2.5" 
+          fill="#1e1b4b">
+      POWERED BY DIRD
+    </text>
+  </g>
+
+  <!-- School Heritage Sanskrit Motto Ribbon at Base -->
+  <text x="256" y="454" 
+        text-anchor="middle" 
+        font-family="Georgia, serif" 
+        font-weight="bold" 
+        font-size="13" 
+        letter-spacing="1.5" 
+        fill="#fde047">
+    सा विद्या या विमुक्तये
+  </text>
+</svg>
+
